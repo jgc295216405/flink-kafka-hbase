@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+    <property>
+        <name>hbase.table.sanity.checks</name>
+        <value>false</value>
+    </property>
+
+    <property>
+        <name>hbase.zookeeper.quorum</name>
+        <value>hadoop344.photo.163.org,hadoop345.photo.163.org,hadoop346.photo.163.org</value>
+    </property>
+    <property>
+        <name>zookeeper.znode.parent</name>
+        <value>/hbase-nss-validate</value>
+    </property>
+
+
+    <property>
+        <name>hbase.rpc.timeout</name>
+        <value>30000</value>
+    </property>
+    <property>
+        <name>hbase.client.write.buffer</name>
+        <value>2097152</value>
+    </property>
+    <property>
+        <name>hbase.client.pause</name>
+        <value>100</value>
+    </property>
+    <property>
+        <name>hbase.client.scanner.caching</name>
+        <value>1000</value>
+    </property>
+    <property>
+        <name>hbase.client.retries.number</name>
+        <value>2</value>
+    </property>
+
+    <!--authorization settings-->
+    <property>
+        <name>hbase.security.authorization</name>
+        <value>false</value>
+    </property>
+    <property>
+        <name>hbase.kerbros.krb5file</name>
+        <value>krb5.conf</value>
+    </property>
+    <property>
+        <name>hbase.kerbros.keytab</name>
+        <value>kaola.keytab</value>
+    </property>
+    <property>
+        <name>hbase.kerbros.user</name>
+        <value>kaola@HADOOP.HZ.NETEASE.COM</value>
+    </property>
+
+</configuration>

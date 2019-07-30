@@ -1,0 +1,16 @@
+*.project
+*.classpath
+*.settings
+*target
+*logs/
+log/
+*.class
+.idea
+*/classes/*
+*.log
+*.iml
+*/target/*
+*.bat
+dependency-reduced-pom.xml
+build.xml
+compressed
